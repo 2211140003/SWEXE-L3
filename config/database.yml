@@ -22,4 +22,13 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: test_render_e3ak
+  username: test_render_e3ak_user
+  password: <%= ENV['aFUooqba1cgUI7Bc9tOrJIPqKi5sw4iX'] %>
+  url: <%= ENV['postgresql://test_render_e3ak_user:aFUooqba1cgUI7Bc9tOrJIPqKi5sw4iX@dpg-cs0jtiogph6c73a9v680-a/test_render_e3ak'] %>
+
+
+
